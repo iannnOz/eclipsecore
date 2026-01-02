@@ -1,0 +1,6 @@
+id=eclipsecore
+name=EclipseCore Performance
+version=v1.0
+versionCode=1
+author=Kuromi
+description=optimasi CPU, GPU, dan manajemen RAM untuk performa maksimal.

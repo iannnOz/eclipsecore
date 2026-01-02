@@ -1,0 +1,8 @@
+# Smooth Scrolling & UI
+windowsmgr.max_events_per_sec=150
+ro.max.fling_velocity=20000
+ro.min.fling_velocity=8000
+
+# Performa Jaringan
+net.tcp.2g_init_rwnd=10
+net.tcp.3g_init_rwnd=20
