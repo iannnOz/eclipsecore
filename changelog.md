@@ -1,18 +1,31 @@
-# 🌑 EclipseCore Changelog
+🌑 EclipseCore - Nova Edition | Changelog
 
-## v1.1.0 (Codename: NOVA) - 2026-01-02
-### 🚀 Performa & Kernel
-- **CPU Lock Logic**: Berhasil mengunci frekuensi CPU ke nilai maksimum untuk stabilitas performa.
-- **Governor Update**: Mengubah CPU governor menjadi `performance` secara paksa.
-- **GPU Boost**: Mengaktifkan `adreno_boost_policy` untuk chipset Snapdragon.
+All notable changes to the EclipseCore module will be documented in this file.
+[1.2.0] - 2026-01-02
+Added
 
-### 🖥️ UI & Scrolling
-- [cite_start]**Refresh Rate Events**: Meningkatkan `max_events_per_sec` menjadi 150 untuk UI yang lebih responsif[cite: 1].
-- [cite_start]**Fling Velocity**: Optimasi kecepatan geser (fling) dengan nilai maksimum 20000[cite: 1].
+    Aggressive Governor Tunables: Optimized schedutil and interactive parameters for near-instant frequency ramping.
 
-### 🌐 Networking
-- [cite_start]**TCP Optimization**: Peningkatan `init_rwnd` untuk koneksi 2G dan 3G[cite: 1].
+    Surface Flinger Boost: Forced GPU composition to offload UI rendering from the CPU, reducing micro-stutters.
 
-### ⚠️ System Changes
-- **Thermal Bypass**: Menonaktifkan `thermal-engine` vendor untuk mencegah throttling.
-- **KSU/Magisk Compatibility**: Pembaruan skrip instalasi untuk deteksi perangkat yang lebih baik.
+    Process Prioritization: Implemented kernel-level task priority for foreground gaming applications.
+
+    I/O Throughput Enhancement: Increased database access speeds for faster app launches.
+
+Changed
+
+    Thermal Engine Management: Updated thermal bypass logic to support a wider range of MediaTek and Snapdragon vendor services.
+
+    Hard-Lock Logic: Improved frequency detection script to better identify maximum hardware clock speeds on the latest Dimensity and Snapdragon chips.
+
+    Module Identity: Updated module.prop and customize.sh to reflect version 1.2.0.
+
+Fixed
+
+    Fixed an issue where some Little cores would drop to idle on specific MediaTek devices.
+
+    Resolved a conflict with logd that caused excessive CPU usage during high-performance sessions.
+
+Removed
+
+    Removed redundant legacy kernel tweaks that were causing instability on Android 13+.
