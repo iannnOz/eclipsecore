@@ -1,6 +1,7 @@
 id=eclipsecore
-name=EclipseCore Performance
-version=v1.0
-versionCode=1
-author=Kuromi
-description=optimasi CPU, GPU, dan manajemen RAM untuk performa maksimal.
+name=EclipseCore Engine
+version=v1.0.0
+versionCode=100
+author=[Kuroya]
+description=Advanced system optimization for Android.
+updateJson=https://raw.githubusercontent.com/iannnOz/eclipsecore/main/update.json
