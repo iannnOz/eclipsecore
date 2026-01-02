@@ -23,8 +23,3 @@
 3. Pilih menu **Modules** > **Install from storage**.
 4. Pilih file zip tersebut dan reboot perangkat.
 
-#### Melalui CLI (Opreker Style):
-```bash
-su -c "ksu module install /sdcard/EclipseCore.zip" # Untuk KSU
-# atau
-su -c "magisk --install-module /sdcard/EclipseCore.zip" # Untuk Magisk
