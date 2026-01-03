@@ -1,6 +1,6 @@
 {
-  "version": "v1.2.0",
-  "versionCode": 120,
+  "version": "v1.3.0",
+  "versionCode": 130,
   "zipUrl": "https://github.com/iannnOz/eclipsecore/releases/download/v.1.3.0/EclipseCore-v1.3.0.zip",
   "changelog": "https://raw.githubusercontent.com/iannnOz/eclipsecore/main/changelog.md"
 }
