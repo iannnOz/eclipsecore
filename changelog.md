@@ -1,13 +1,14 @@
-## [1.3.0] - 2026-01-03
+## [1.4.0] - 2026-01-04
 ### Added
-- **Memory Bus Lock:** Forced memory controller to peak performance state.
-- **Input Lag Reduction:** Optimized software-level touch event handling for competitive gaming.
-- **GPU Idle Disable:** Removed idle timer for Adreno GPUs to prevent clock fluctuations.
-- **Writeback Tuning:** Zeroed out dirty page writeback intervals to prioritize foreground app I/O.
+- **Recording FPS Bypass:** Keep 120Hz alive while screen recording on AOSP ROMs.
+- **Auto-FSTRIM:** Automatic partition maintenance on every boot.
+- **ZRAM Tuner:** Switched to LZ4 compression for faster RAM swapping.
+- **Gaming Network Tweak:** Enabled TCP Low Latency and Fast Open for better ping.
+- **I/O Latency Reduction:** Minimized deadline for faster data throughput.
 
 ### Improved
-- **MediaTek Support:** Added specific perfmgr paths for 2026 Dimensity series.
-- **Process Management:** Refined OOM (Out of Memory) killer to be even more protective of gaming tasks.
+- **SurfaceFlinger Tuning:** Disabled VSync backpressure for uncapped UI feel.
+- **Thermal Kill:** Expanded support for 2026 flagship thermal services.
 
 ### Fixed
-- Fixed minor jitter issues when switching between high-load applications.
+- Fixed lagging issues during high-bitrate screen recording sessions.
